@@ -1,0 +1,25 @@
+public class LatihanLingkaran() {
+    Run|Debug
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // tanya radius
+        System.out.print("R");
+        int r = scanner.nextInt();
+
+        // buat objek lingkaran
+        Lingkaran lingkaran = new Lingkaran(r);
+        
+        // tampilkan diameter
+        System.out.format("Diameter = %d", lingkaran.diameter());
+
+        // tampilkan luas
+        double luas = lingkaran.luas();
+        System.out.println("Luas = "+luas);
+        System.out.format("Luas = %.2f\n", lingkaran.luas()); // tidak perlu variabel luas
+
+        // tampilkan keliling 
+        double keliling = lingkaran.keliling();
+        System.out.println("Keliling = "+keliling);
+    }
+}
